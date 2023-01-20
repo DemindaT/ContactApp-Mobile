@@ -113,7 +113,7 @@ public class Provider extends ContentProvider {
 
         }
 
-        // since we are going to insert data that means we are writing on the database.
+
         SQLiteDatabase database = mDbhelper.getWritableDatabase();
         long id = database.insert(Contract.ContactEntry.TABLE_NAME, null, values);
 
